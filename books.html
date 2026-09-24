@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>STEM /Ebooks Collections</title>
+       <link rel="preconnect" href="https:/fonts.googleapis.com">
+       <link rel="preconnect" href="https:/fonts.gstatic.com" crossorigin>
+       <link href="https:/fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+       <link href="https:/fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+           <style>
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: 'Ubuntu', 'Noto Serif Bengali', sans-serif, serif;
+            font-size: 17px;
+            color: #20232c;
+        }
+        .wrap { max-width: 880px; margin: 0 auto; padding: 18px 16px 40px; }
+        h1 { text-align: center; margin: 4px 0 18px; font-size: clamp(20px, 4.5vw, 28px); }
+        h3 { margin: 20px 0 6px; font-size: clamp(16px, 3.5vw, 20px); }
+        ol { margin: 0; padding-left: 22px; }
+        .book-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            padding: 7px 4px;
+            border-bottom: 1px solid #e6e8ef;
+        }
+        .book-title {
+            flex: 1 1 auto;
+            min-width: 0;
+            cursor: pointer;
+            color: #1c2a49;
+        }
+        .book-title:hover { color: #a3841f; text-decoration: underline; }
+        .book-actions {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .act {
+            font: inherit;
+            font-size: 13px;
+            line-height: 1;
+            padding: 7px 14px;
+            border-radius: 999px;
+            border: 1px solid #1c2a49;
+            text-decoration: none;
+            cursor: pointer;
+            background: #fff;
+            color: #1c2a49;
+            white-space: nowrap;
+        }
+        .reader-open { background: #1c2a49; color: #d4af37; }
+        .reader-open:hover, .reader-open:focus-visible { background: #26375f; }
+        .book-download:hover, .book-download:focus-visible { background: #eef1f8; }
+        .act:focus-visible, .book-title:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+
+        @media (max-width: 640px) {
+            .act { flex: 1; text-align: center; }
+            .book-item { flex-direction: column; align-items: stretch; gap: 6px; padding: 9px 2px; }
+            .book-actions { gap: 8px; }
+        }
+   </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <h1><u>STEM ebook collections</u></h1>
+            <ul>
+            <li><h3>Mathematics</h3>
+            <ol type="1">
+                <li class="book-item" data-src="Ebooks/Mathematics/Advanced_Calculus.pdf" data-title="Advanced Calculus">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Advanced Calculus</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Advanced Calculus">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Advanced_Calculus.pdf" download="Advanced Calculus" aria-label="Download Advanced Calculus">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/BK08_Calculus%20-%20Early%20Transcendentals.pdf" data-title="BK08 Calculus - Early Transcendentals">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">BK08 Calculus - Early Transcendentals</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read BK08 Calculus - Early Transcendentals">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/BK08_Calculus%20-%20Early%20Transcendentals.pdf" download="BK08 Calculus - Early Transcendentals" aria-label="Download BK08 Calculus - Early Transcendentals">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Download.pdf" data-title="Download">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Download</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Download">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Download.pdf" download="Download" aria-label="Download Download">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Elementary%20Linear%20Algebra%20(Copy).pdf" data-title="Elementary Linear Algebra (Copy)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Elementary Linear Algebra (Copy)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Elementary Linear Algebra (Copy)">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Elementary%20Linear%20Algebra%20(Copy).pdf" download="Elementary Linear Algebra (Copy)" aria-label="Download Elementary Linear Algebra (Copy)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Elementary%20Linear%20Algebra.pdf" data-title="Elementary Linear Algebra">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Elementary Linear Algebra</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Elementary Linear Algebra">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Elementary%20Linear%20Algebra.pdf" download="Elementary Linear Algebra" aria-label="Download Elementary Linear Algebra">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Elementary%20Number%20Theory%20by%20Keneth%20Rosen%20.pdf" data-title="Elementary Number Theory by Keneth Rosen">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Elementary Number Theory by Keneth Rosen</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Elementary Number Theory by Keneth Rosen">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Elementary%20Number%20Theory%20by%20Keneth%20Rosen%20.pdf" download="Elementary Number Theory by Keneth Rosen" aria-label="Download Elementary Number Theory by Keneth Rosen">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/James%20Stewart%20-%20Calculus%20-%20Early%20transcendentals%20(8th%20Edition).pdf" data-title="James Stewart - Calculus - Early transcendentals (8th Edition)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">James Stewart - Calculus - Early transcendentals (8th Edition)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read James Stewart - Calculus - Early transcendentals (8th Edition)">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/James%20Stewart%20-%20Calculus%20-%20Early%20transcendentals%20(8th%20Edition).pdf" download="James Stewart - Calculus - Early transcendentals (8th Edition)" aria-label="Download James Stewart - Calculus - Early transcendentals (8th Edition)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Linear%20Algebra.pdf" data-title="Linear Algebra">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Linear Algebra</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Linear Algebra">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Linear%20Algebra.pdf" download="Linear Algebra" aria-label="Download Linear Algebra">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Nimikh%20Pane%20Calculus-er%20Poth%20Porivromon%20By%20Chamok%20Hasan.pdf" data-title="Nimikh Pane Calculus-er Poth Porivromon By Chamok Hasan">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Nimikh Pane Calculus-er Poth Porivromon By Chamok Hasan</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Nimikh Pane Calculus-er Poth Porivromon By Chamok Hasan">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Nimikh%20Pane%20Calculus-er%20Poth%20Porivromon%20By%20Chamok%20Hasan.pdf" download="Nimikh Pane Calculus-er Poth Porivromon By Chamok Hasan" aria-label="Download Nimikh Pane Calculus-er Poth Porivromon By Chamok Hasan">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Rosen,%20Kenneth%20H%20-%20Discrete%20mathematics%20and%20its%20applications-McGraw-Hill%20(8th%20ed)(2019).pdf" data-title="Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (8th ed)(2019)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (8th ed)(2019)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (8th ed)(2019)">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Rosen,%20Kenneth%20H%20-%20Discrete%20mathematics%20and%20its%20applications-McGraw-Hill%20(8th%20ed)(2019).pdf" download="Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (8th ed)(2019)" aria-label="Download Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (8th ed)(2019)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/The_Art_of_Computer_Programming%20-%20Vol%201_text.pdf" data-title="The Art of Computer Programming - Vol 1 text">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The Art of Computer Programming - Vol 1 text</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The Art of Computer Programming - Vol 1 text">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/The_Art_of_Computer_Programming%20-%20Vol%201_text.pdf" download="The Art of Computer Programming - Vol 1 text" aria-label="Download The Art of Computer Programming - Vol 1 text">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/Trigonometric_Formula.pdf" data-title="Trigonometric Formula">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Trigonometric Formula</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Trigonometric Formula">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/Trigonometric_Formula.pdf" download="Trigonometric Formula" aria-label="Download Trigonometric Formula">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/[Kenneth_Rosen]_Discrete_Mathematics_and_Its_Appli_7th_2.pdf" data-title="[Kenneth Rosen] Discrete Mathematics and Its Appli 7th 2">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">[Kenneth Rosen] Discrete Mathematics and Its Appli 7th 2</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read [Kenneth Rosen] Discrete Mathematics and Its Appli 7th 2">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/[Kenneth_Rosen]_Discrete_Mathematics_and_Its_Appli_7th_2.pdf" download="[Kenneth Rosen] Discrete Mathematics and Its Appli 7th 2" aria-label="Download [Kenneth Rosen] Discrete Mathematics and Its Appli 7th 2">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/_%20Calculus%20-%20Early%20Transcendentals%20by%20James%20Stewart%20(8th%20Edition).pdf" data-title="Calculus - Early Transcendentals by James Stewart (8th Edition)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Calculus - Early Transcendentals by James Stewart (8th Edition)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Calculus - Early Transcendentals by James Stewart (8th Edition)">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/_%20Calculus%20-%20Early%20Transcendentals%20by%20James%20Stewart%20(8th%20Edition).pdf" download="Calculus - Early Transcendentals by James Stewart (8th Edition)" aria-label="Download Calculus - Early Transcendentals by James Stewart (8th Edition)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/calculus-18-aug-16_pdf_14971604389804.pdf" data-title="calculus-18-aug-16 pdf 14971604389804">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">calculus-18-aug-16 pdf 14971604389804</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read calculus-18-aug-16 pdf 14971604389804">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/calculus-18-aug-16_pdf_14971604389804.pdf" download="calculus-18-aug-16 pdf 14971604389804" aria-label="Download calculus-18-aug-16 pdf 14971604389804">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/calculus-volume-1_-_WEB.pdf" data-title="calculus-volume-1 - WEB">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">calculus-volume-1 - WEB</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read calculus-volume-1 - WEB">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/calculus-volume-1_-_WEB.pdf" download="calculus-volume-1 - WEB" aria-label="Download calculus-volume-1 - WEB">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/calculus-volume-2_-_WEB.pdf" data-title="calculus-volume-2 - WEB">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">calculus-volume-2 - WEB</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read calculus-volume-2 - WEB">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/calculus-volume-2_-_WEB.pdf" download="calculus-volume-2 - WEB" aria-label="Download calculus-volume-2 - WEB">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/calculus-volume-3_-_WEB.pdf" data-title="calculus-volume-3 - WEB">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">calculus-volume-3 - WEB</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read calculus-volume-3 - WEB">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/calculus-volume-3_-_WEB.pdf" download="calculus-volume-3 - WEB" aria-label="Download calculus-volume-3 - WEB">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/gtacbook.pdf" data-title="gtacbook">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">gtacbook</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read gtacbook">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/gtacbook.pdf" download="gtacbook" aria-label="Download gtacbook">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/jhu-number-theory-spring-2025.pdf" data-title="jhu-number-theory-spring-2025">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">jhu-number-theory-spring-2025</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read jhu-number-theory-spring-2025">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/jhu-number-theory-spring-2025.pdf" download="jhu-number-theory-spring-2025" aria-label="Download jhu-number-theory-spring-2025">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Mathematics/linear-algebra-author-gilbert-strang.pdf" data-title="linear-algebra-author-gilbert-strang">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">linear-algebra-author-gilbert-strang</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read linear-algebra-author-gilbert-strang">Read</button>
+                        <a class="act book-download" href="Ebooks/Mathematics/linear-algebra-author-gilbert-strang.pdf" download="linear-algebra-author-gilbert-strang" aria-label="Download linear-algebra-author-gilbert-strang">Download</a>
+                    </span>
+                </li>
+            </ol></li>
+            <li><h3>Physics</h3>
+            <ol type="1">
+                <li class="book-item" data-src="Ebooks/Physics/2015.502076.A-Brief.pdf" data-title="2015.502076.A-Brief">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">2015.502076.A-Brief</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read 2015.502076.A-Brief">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/2015.502076.A-Brief.pdf" download="2015.502076.A-Brief" aria-label="Download 2015.502076.A-Brief">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/Fundamental%20Astronomy%205th%20Edition%20-%20Karttunen%20y%20otros.pdf" data-title="Fundamental Astronomy 5th Edition - Karttunen y otros">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Fundamental Astronomy 5th Edition - Karttunen y otros</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Fundamental Astronomy 5th Edition - Karttunen y otros">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/Fundamental%20Astronomy%205th%20Edition%20-%20Karttunen%20y%20otros.pdf" download="Fundamental Astronomy 5th Edition - Karttunen y otros" aria-label="Download Fundamental Astronomy 5th Edition - Karttunen y otros">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/Fundamentals%20of%20Physics%20by%20David%20Halliday%20-%20Robert%20Resnick%20And%20Jearl%20Walker_(urdukutabkhanapk.blogspot.com).pdf" data-title="Fundamentals of Physics by David Halliday - Robert Resnick And Jearl Walker (urdukutabkhanapk.blogspot.com)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Fundamentals of Physics by David Halliday - Robert Resnick And Jearl Walker (urdukutabkhanapk.blogspot.com)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Fundamentals of Physics by David Halliday - Robert Resnick And Jearl Walker (urdukutabkhanapk.blogspot.com)">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/Fundamentals%20of%20Physics%20by%20David%20Halliday%20-%20Robert%20Resnick%20And%20Jearl%20Walker_(urdukutabkhanapk.blogspot.com).pdf" download="Fundamentals of Physics by David Halliday - Robert Resnick And Jearl Walker (urdukutabkhanapk.blogspot.com)" aria-label="Download Fundamentals of Physics by David Halliday - Robert Resnick And Jearl Walker (urdukutabkhanapk.blogspot.com)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/Griffiths%20-%20Introduction%20to%20quantum%20mechanics_text.pdf" data-title="Griffiths - Introduction to quantum mechanics text">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Griffiths - Introduction to quantum mechanics text</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Griffiths - Introduction to quantum mechanics text">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/Griffiths%20-%20Introduction%20to%20quantum%20mechanics_text.pdf" download="Griffiths - Introduction to quantum mechanics text" aria-label="Download Griffiths - Introduction to quantum mechanics text">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/Missile%20Guidance%20And%20Control%20Systems.pdf" data-title="Missile Guidance And Control Systems">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Missile Guidance And Control Systems</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Missile Guidance And Control Systems">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/Missile%20Guidance%20And%20Control%20Systems.pdf" download="Missile Guidance And Control Systems" aria-label="Download Missile Guidance And Control Systems">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/Six%20easy%20pieces-%20essentials%20of%20physics,%20explained%20by%20its%20most%20brilliant%20teacher%20-%20Richard%20P.%20Feynman.pdf" data-title="Six easy pieces- essentials of physics, explained by its most brilliant teacher - Richard P. Feynman">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Six easy pieces- essentials of physics, explained by its most brilliant teacher - Richard P. Feynman</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Six easy pieces- essentials of physics, explained by its most brilliant teacher - Richard P. Feynman">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/Six%20easy%20pieces-%20essentials%20of%20physics,%20explained%20by%20its%20most%20brilliant%20teacher%20-%20Richard%20P.%20Feynman.pdf" download="Six easy pieces- essentials of physics, explained by its most brilliant teacher - Richard P. Feynman" aria-label="Download Six easy pieces- essentials of physics, explained by its most brilliant teacher - Richard P. Feynman">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/Stacey_Palen_Schaums_Outline_of_Astronom.pdf" data-title="Stacey Palen Schaums Outline of Astronom">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Stacey Palen Schaums Outline of Astronom</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Stacey Palen Schaums Outline of Astronom">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/Stacey_Palen_Schaums_Outline_of_Astronom.pdf" download="Stacey Palen Schaums Outline of Astronom" aria-label="Download Stacey Palen Schaums Outline of Astronom">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/The_Feynman_Lectures_on_Physics_-_VOL1.pdf" data-title="The Feynman Lectures on Physics - VOL1">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The Feynman Lectures on Physics - VOL1</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The Feynman Lectures on Physics - VOL1">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/The_Feynman_Lectures_on_Physics_-_VOL1.pdf" download="The Feynman Lectures on Physics - VOL1" aria-label="Download The Feynman Lectures on Physics - VOL1">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/The_Feynman_Lectures_on_Physics_-_VOL3.pdf" data-title="The Feynman Lectures on Physics - VOL3">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The Feynman Lectures on Physics - VOL3</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The Feynman Lectures on Physics - VOL3">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/The_Feynman_Lectures_on_Physics_-_VOL3.pdf" download="The Feynman Lectures on Physics - VOL3" aria-label="Download The Feynman Lectures on Physics - VOL3">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/The_Feynman_Lectures_on_Physics_Vol_II_E.pdf" data-title="The Feynman Lectures on Physics Vol II E">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The Feynman Lectures on Physics Vol II E</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The Feynman Lectures on Physics Vol II E">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/The_Feynman_Lectures_on_Physics_Vol_II_E.pdf" download="The Feynman Lectures on Physics Vol II E" aria-label="Download The Feynman Lectures on Physics Vol II E">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/UniversityPhysicsVolume1-LR.pdf" data-title="UniversityPhysicsVolume1-LR">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">UniversityPhysicsVolume1-LR</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read UniversityPhysicsVolume1-LR">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/UniversityPhysicsVolume1-LR.pdf" download="UniversityPhysicsVolume1-LR" aria-label="Download UniversityPhysicsVolume1-LR">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/UniversityPhysicsVolume2-LR.pdf" data-title="UniversityPhysicsVolume2-LR">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">UniversityPhysicsVolume2-LR</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read UniversityPhysicsVolume2-LR">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/UniversityPhysicsVolume2-LR.pdf" download="UniversityPhysicsVolume2-LR" aria-label="Download UniversityPhysicsVolume2-LR">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/UniversityPhysicsVolume3-LR.pdf" data-title="UniversityPhysicsVolume3-LR">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">UniversityPhysicsVolume3-LR</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read UniversityPhysicsVolume3-LR">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/UniversityPhysicsVolume3-LR.pdf" download="UniversityPhysicsVolume3-LR" aria-label="Download UniversityPhysicsVolume3-LR">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/a-students-guide-to-the-mathematics-of-astronomy_compress.pdf" data-title="a-students-guide-to-the-mathematics-of-astronomy compress">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">a-students-guide-to-the-mathematics-of-astronomy compress</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read a-students-guide-to-the-mathematics-of-astronomy compress">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/a-students-guide-to-the-mathematics-of-astronomy_compress.pdf" download="a-students-guide-to-the-mathematics-of-astronomy compress" aria-label="Download a-students-guide-to-the-mathematics-of-astronomy compress">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/fundamentals-of-physics-textbook.pdf" data-title="fundamentals-of-physics-textbook">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">fundamentals-of-physics-textbook</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read fundamentals-of-physics-textbook">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/fundamentals-of-physics-textbook.pdf" download="fundamentals-of-physics-textbook" aria-label="Download fundamentals-of-physics-textbook">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/Physics/succeed-in-physics.pdf" data-title="succeed-in-physics">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">succeed-in-physics</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read succeed-in-physics">Read</button>
+                        <a class="act book-download" href="Ebooks/Physics/succeed-in-physics.pdf" download="succeed-in-physics" aria-label="Download succeed-in-physics">Download</a>
+                    </span>
+                </li>
+            </ol></li>
+            <li><h3>CS</h3>
+            <ol type="1">
+                <li class="book-item" data-src="Ebooks/CS/5641035.pdf" data-title="5641035">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">5641035</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read 5641035">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/5641035.pdf" download="5641035" aria-label="Download 5641035">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Arduino-Course-for-Absolute-Beginners-V4.pdf" data-title="Arduino-Course-for-Absolute-Beginners-V4">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Arduino-Course-for-Absolute-Beginners-V4</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Arduino-Course-for-Absolute-Beginners-V4">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Arduino-Course-for-Absolute-Beginners-V4.pdf" download="Arduino-Course-for-Absolute-Beginners-V4" aria-label="Download Arduino-Course-for-Absolute-Beginners-V4">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/C%2B%2B.Primer.5th.Edition_2013.pdf" data-title="C++.Primer.5th.Edition 2013">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">C++.Primer.5th.Edition 2013</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read C++.Primer.5th.Edition 2013">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/C%2B%2B.Primer.5th.Edition_2013.pdf" download="C++.Primer.5th.Edition 2013" aria-label="Download C++.Primer.5th.Edition 2013">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/C%2B%2B.Primer.Plus.6th.Edition.Oct.2011.pdf" data-title="C++.Primer.Plus.6th.Edition.Oct.2011">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">C++.Primer.Plus.6th.Edition.Oct.2011</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read C++.Primer.Plus.6th.Edition.Oct.2011">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/C%2B%2B.Primer.Plus.6th.Edition.Oct.2011.pdf" download="C++.Primer.Plus.6th.Edition.Oct.2011" aria-label="Download C++.Primer.Plus.6th.Edition.Oct.2011">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/C%2B%2B_Primer_Plus_6th_edition_EN.pdf" data-title="C++ Primer Plus 6th edition EN">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">C++ Primer Plus 6th edition EN</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read C++ Primer Plus 6th edition EN">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/C%2B%2B_Primer_Plus_6th_edition_EN.pdf" download="C++ Primer Plus 6th edition EN" aria-label="Download C++ Primer Plus 6th edition EN">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/C_Book_2nd.pdf" data-title="C Book 2nd">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">C Book 2nd</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read C Book 2nd">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/C_Book_2nd.pdf" download="C Book 2nd" aria-label="Download C Book 2nd">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/C_Programming.pdf" data-title="C Programming">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">C Programming</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read C Programming">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/C_Programming.pdf" download="C Programming" aria-label="Download C Programming">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Cormen%20Introduction%20to%20Algorithms.pdf" data-title="Cormen Introduction to Algorithms">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Cormen Introduction to Algorithms</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Cormen Introduction to Algorithms">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Cormen%20Introduction%20to%20Algorithms.pdf" download="Cormen Introduction to Algorithms" aria-label="Download Cormen Introduction to Algorithms">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Data_Science_From_Scratch.pdf" data-title="Data Science From Scratch">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Data Science From Scratch</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Data Science From Scratch">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Data_Science_From_Scratch.pdf" download="Data Science From Scratch" aria-label="Download Data Science From Scratch">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Efficient_Linux_at_the_Command_Line.pdf" data-title="Efficient Linux at the Command Line">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Efficient Linux at the Command Line</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Efficient Linux at the Command Line">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Efficient_Linux_at_the_Command_Line.pdf" download="Efficient Linux at the Command Line" aria-label="Download Efficient Linux at the Command Line">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Hands-on-Machine-Learning.pdf" data-title="Hands-on-Machine-Learning">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Hands-on-Machine-Learning</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Hands-on-Machine-Learning">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Hands-on-Machine-Learning.pdf" download="Hands-on-Machine-Learning" aria-label="Download Hands-on-Machine-Learning">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Introduction-to-Machine-Learning-with-Python.pdf" data-title="Introduction-to-Machine-Learning-with-Python">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Introduction-to-Machine-Learning-with-Python</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Introduction-to-Machine-Learning-with-Python">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Introduction-to-Machine-Learning-with-Python.pdf" download="Introduction-to-Machine-Learning-with-Python" aria-label="Download Introduction-to-Machine-Learning-with-Python">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/IntroductiontoAlgorithms.pdf" data-title="IntroductiontoAlgorithms">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">IntroductiontoAlgorithms</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read IntroductiontoAlgorithms">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/IntroductiontoAlgorithms.pdf" download="IntroductiontoAlgorithms" aria-label="Download IntroductiontoAlgorithms">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/JavaScript_The_Definitive_Guide.pdf" data-title="JavaScript The Definitive Guide">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">JavaScript The Definitive Guide</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read JavaScript The Definitive Guide">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/JavaScript_The_Definitive_Guide.pdf" download="JavaScript The Definitive Guide" aria-label="Download JavaScript The Definitive Guide">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Machine%2520Learning%2520Algorithm%2520(Nafis%2520Nihal).pdf" data-title="Machine Learning Algorithm (Nafis Nihal)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Machine Learning Algorithm (Nafis Nihal)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Machine Learning Algorithm (Nafis Nihal)">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Machine%2520Learning%2520Algorithm%2520(Nafis%2520Nihal).pdf" download="Machine Learning Algorithm (Nafis Nihal)" aria-label="Download Machine Learning Algorithm (Nafis Nihal)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Martin-Kleppmann---Designing-Data-Intensive-Applications_-O%E2%80%99Reilly-Media-(2017).pdf" data-title="Martin-Kleppmann---Designing-Data-Intensive-Applications -O’Reilly-Media-(2017)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Martin-Kleppmann---Designing-Data-Intensive-Applications -O’Reilly-Media-(2017)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Martin-Kleppmann---Designing-Data-Intensive-Applications -O’Reilly-Media-(2017)">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Martin-Kleppmann---Designing-Data-Intensive-Applications_-O%E2%80%99Reilly-Media-(2017).pdf" download="Martin-Kleppmann---Designing-Data-Intensive-Applications -O’Reilly-Media-(2017)" aria-label="Download Martin-Kleppmann---Designing-Data-Intensive-Applications -O’Reilly-Media-(2017)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Massimo%20Banzi-Getting%20Started%20with%20Arduino%20-Make%20(2011).pdf" data-title="Massimo Banzi-Getting Started with Arduino -Make (2011)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Massimo Banzi-Getting Started with Arduino -Make (2011)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Massimo Banzi-Getting Started with Arduino -Make (2011)">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Massimo%20Banzi-Getting%20Started%20with%20Arduino%20-Make%20(2011).pdf" download="Massimo Banzi-Getting Started with Arduino -Make (2011)" aria-label="Download Massimo Banzi-Getting Started with Arduino -Make (2011)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Mastering%20Embedded%20Linux%20Programming.pdf" data-title="Mastering Embedded Linux Programming">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Mastering Embedded Linux Programming</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Mastering Embedded Linux Programming">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Mastering%20Embedded%20Linux%20Programming.pdf" download="Mastering Embedded Linux Programming" aria-label="Download Mastering Embedded Linux Programming">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Networking%20College,Polytechnic,%20Non_Tech.pdf" data-title="Networking College,Polytechnic, Non Tech">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Networking College,Polytechnic, Non Tech</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Networking College,Polytechnic, Non Tech">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Networking%20College,Polytechnic,%20Non_Tech.pdf" download="Networking College,Polytechnic, Non Tech" aria-label="Download Networking College,Polytechnic, Non Tech">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/OReilly%20Programming%20Python%204th.pdf" data-title="OReilly Programming Python 4th">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">OReilly Programming Python 4th</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read OReilly Programming Python 4th">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/OReilly%20Programming%20Python%204th.pdf" download="OReilly Programming Python 4th" aria-label="Download OReilly Programming Python 4th">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Programming%20%26%20Database%20College,%20Polytechnic,%20Non%20Tech.pdf" data-title="Programming &amp; Database College, Polytechnic, Non Tech">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Programming &amp; Database College, Polytechnic, Non Tech</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Programming &amp; Database College, Polytechnic, Non Tech">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Programming%20%26%20Database%20College,%20Polytechnic,%20Non%20Tech.pdf" download="Programming &amp; Database College, Polytechnic, Non Tech" aria-label="Download Programming &amp; Database College, Polytechnic, Non Tech">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Programming%20in%20ANSI%20C-8e-Balagurusamy%20(Copy).pdf" data-title="Programming in ANSI C-8e-Balagurusamy (Copy)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Programming in ANSI C-8e-Balagurusamy (Copy)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Programming in ANSI C-8e-Balagurusamy (Copy)">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Programming%20in%20ANSI%20C-8e-Balagurusamy%20(Copy).pdf" download="Programming in ANSI C-8e-Balagurusamy (Copy)" aria-label="Download Programming in ANSI C-8e-Balagurusamy (Copy)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Programming-with-C-Byron-Gottfried%20(Copy).pdf" data-title="Programming-with-C-Byron-Gottfried (Copy)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Programming-with-C-Byron-Gottfried (Copy)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Programming-with-C-Byron-Gottfried (Copy)">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Programming-with-C-Byron-Gottfried%20(Copy).pdf" download="Programming-with-C-Byron-Gottfried (Copy)" aria-label="Download Programming-with-C-Byron-Gottfried (Copy)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/ProgrammingPearls2nd%20(Copy).pdf" data-title="ProgrammingPearls2nd (Copy)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">ProgrammingPearls2nd (Copy)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read ProgrammingPearls2nd (Copy)">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/ProgrammingPearls2nd%20(Copy).pdf" download="ProgrammingPearls2nd (Copy)" aria-label="Download ProgrammingPearls2nd (Copy)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Python%20for%20Data%20Analysis%20(Copy).pdf" data-title="Python for Data Analysis (Copy)">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Python for Data Analysis (Copy)</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Python for Data Analysis (Copy)">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Python%20for%20Data%20Analysis%20(Copy).pdf" download="Python for Data Analysis (Copy)" aria-label="Download Python for Data Analysis (Copy)">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/The%20C%2B%2B%20Programming%20Language,%204th%20Edition%20by%20Stroustrup%20B..pdf" data-title="The C++ Programming Language, 4th Edition by Stroustrup B.">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The C++ Programming Language, 4th Edition by Stroustrup B.</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The C++ Programming Language, 4th Edition by Stroustrup B.">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/The%20C%2B%2B%20Programming%20Language,%204th%20Edition%20by%20Stroustrup%20B..pdf" download="The C++ Programming Language, 4th Edition by Stroustrup B." aria-label="Download The C++ Programming Language, 4th Edition by Stroustrup B.">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/The%20Official%20Ubuntu%20Book,%207th%20Edition.pdf" data-title="The Official Ubuntu Book, 7th Edition">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The Official Ubuntu Book, 7th Edition</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The Official Ubuntu Book, 7th Edition">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/The%20Official%20Ubuntu%20Book,%207th%20Edition.pdf" download="The Official Ubuntu Book, 7th Edition" aria-label="Download The Official Ubuntu Book, 7th Edition">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/The%20Rust%20Programming%20Language%20(%20PDFDrive%20)-1.pdf" data-title="The Rust Programming Language ( PDFDrive )-1">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The Rust Programming Language ( PDFDrive )-1</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The Rust Programming Language ( PDFDrive )-1">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/The%20Rust%20Programming%20Language%20(%20PDFDrive%20)-1.pdf" download="The Rust Programming Language ( PDFDrive )-1" aria-label="Download The Rust Programming Language ( PDFDrive )-1">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/The-Ultimate-Ubuntu-Handbook.pdf" data-title="The-Ultimate-Ubuntu-Handbook">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">The-Ultimate-Ubuntu-Handbook</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read The-Ultimate-Ubuntu-Handbook">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/The-Ultimate-Ubuntu-Handbook.pdf" download="The-Ultimate-Ubuntu-Handbook" aria-label="Download The-Ultimate-Ubuntu-Handbook">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/Understanding%20Cryptography%20by%20Christof%20Paar%20.pdf" data-title="Understanding Cryptography by Christof Paar">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">Understanding Cryptography by Christof Paar</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read Understanding Cryptography by Christof Paar">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/Understanding%20Cryptography%20by%20Christof%20Paar%20.pdf" download="Understanding Cryptography by Christof Paar" aria-label="Download Understanding Cryptography by Christof Paar">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/arduino.pdf" data-title="arduino">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">arduino</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read arduino">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/arduino.pdf" download="arduino" aria-label="Download arduino">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/arduino_projects_book.pdf" data-title="arduino projects book">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">arduino projects book</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read arduino projects book">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/arduino_projects_book.pdf" download="arduino projects book" aria-label="Download arduino projects book">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/b2-programming_challenges.pdf" data-title="b2-programming challenges">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">b2-programming challenges</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read b2-programming challenges">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/b2-programming_challenges.pdf" download="b2-programming challenges" aria-label="Download b2-programming challenges">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/book-0.1.alpha.pdf" data-title="book-0.1.alpha">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">book-0.1.alpha</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read book-0.1.alpha">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/book-0.1.alpha.pdf" download="book-0.1.alpha" aria-label="Download book-0.1.alpha">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/book.pdf" data-title="book">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">book</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read book">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/book.pdf" download="book" aria-label="Download book">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/c-in-a-nutshell-o-reilly-peter-prinz-tony-crawford.pdf" data-title="c-in-a-nutshell-o-reilly-peter-prinz-tony-crawford">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">c-in-a-nutshell-o-reilly-peter-prinz-tony-crawford</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read c-in-a-nutshell-o-reilly-peter-prinz-tony-crawford">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/c-in-a-nutshell-o-reilly-peter-prinz-tony-crawford.pdf" download="c-in-a-nutshell-o-reilly-peter-prinz-tony-crawford" aria-label="Download c-in-a-nutshell-o-reilly-peter-prinz-tony-crawford">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/comprehensive-rust.pdf" data-title="comprehensive-rust">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">comprehensive-rust</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read comprehensive-rust">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/comprehensive-rust.pdf" download="comprehensive-rust" aria-label="Download comprehensive-rust">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/cp1.pdf" data-title="cp1">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">cp1</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read cp1">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/cp1.pdf" download="cp1" aria-label="Download cp1">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/cp2.pdf" data-title="cp2">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">cp2</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read cp2">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/cp2.pdf" download="cp2" aria-label="Download cp2">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/cp3.pdf" data-title="cp3">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">cp3</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read cp3">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/cp3.pdf" download="cp3" aria-label="Download cp3">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/neil%20Beginning%20Linux%20Programming,%204%20Ed.pdf" data-title="neil Beginning Linux Programming, 4 Ed">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">neil Beginning Linux Programming, 4 Ed</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read neil Beginning Linux Programming, 4 Ed">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/neil%20Beginning%20Linux%20Programming,%204%20Ed.pdf" download="neil Beginning Linux Programming, 4 Ed" aria-label="Download neil Beginning Linux Programming, 4 Ed">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/programing%20challenge%20chess%20v2.pdf" data-title="programing challenge chess v2">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">programing challenge chess v2</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read programing challenge chess v2">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/programing%20challenge%20chess%20v2.pdf" download="programing challenge chess v2" aria-label="Download programing challenge chess v2">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/rust_book.pdf" data-title="rust book">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">rust book</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read rust book">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/rust_book.pdf" download="rust book" aria-label="Download rust book">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/the-linux-programming-interface.pdf" data-title="the-linux-programming-interface">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">the-linux-programming-interface</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read the-linux-programming-interface">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/the-linux-programming-interface.pdf" download="the-linux-programming-interface" aria-label="Download the-linux-programming-interface">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/toc.pdf" data-title="toc">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">toc</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read toc">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/toc.pdf" download="toc" aria-label="Download toc">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/vdoc.pub_the-practice-of-programming.pdf" data-title="vdoc.pub the-practice-of-programming">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">vdoc.pub the-practice-of-programming</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read vdoc.pub the-practice-of-programming">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/vdoc.pub_the-practice-of-programming.pdf" download="vdoc.pub the-practice-of-programming" aria-label="Download vdoc.pub the-practice-of-programming">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/%E0%A6%AA%E0%A6%BE%E0%A6%87%E0%A6%A5%E0%A6%A8%20%E0%A6%A6%E0%A6%BF%E0%A7%9F%E0%A7%87%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82%20%E0%A6%B6%E0%A7%87%E0%A6%96%E0%A6%BE.pdf" data-title="পাইথন দিয়ে প্রোগ্রামিং শেখা">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">পাইথন দিয়ে প্রোগ্রামিং শেখা</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read পাইথন দিয়ে প্রোগ্রামিং শেখা">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/%E0%A6%AA%E0%A6%BE%E0%A6%87%E0%A6%A5%E0%A6%A8%20%E0%A6%A6%E0%A6%BF%E0%A7%9F%E0%A7%87%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82%20%E0%A6%B6%E0%A7%87%E0%A6%96%E0%A6%BE.pdf" download="পাইথন দিয়ে প্রোগ্রামিং শেখা" aria-label="Download পাইথন দিয়ে প্রোগ্রামিং শেখা">Download</a>
+                    </span>
+                </li>
+                <li class="book-item" data-src="Ebooks/CS/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8%20%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%82%20%E0%A6%85_%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%97%E0%A6%B0%E0%A6%BF%E0%A6%A6%E0%A6%AE.pdf" data-title="মেশিন লার্নিং অ ্যালগরিদম">
+                    <span class="book-title" role="link" tabindex="0" title="Click to read">মেশিন লার্নিং অ ্যালগরিদম</span>
+                    <span class="book-actions">
+                        <button class="act reader-open" type="button" aria-label="Read মেশিন লার্নিং অ ্যালগরিদম">Read</button>
+                        <a class="act book-download" href="Ebooks/CS/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8%20%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%82%20%E0%A6%85_%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%97%E0%A6%B0%E0%A6%BF%E0%A6%A6%E0%A6%AE.pdf" download="মেশিন লার্নিং অ ্যালগরিদম" aria-label="Download মেশিন লার্নিং অ ্যালগরিদম">Download</a>
+                    </span>
+                </li>
+            </ol></li>
+            </ul>
+        </div>
+        <script src="reader.js" defer></script>
+    </body>
+</html>
